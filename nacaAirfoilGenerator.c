@@ -46,7 +46,7 @@ void calculate_airfoil_coordinates(Airfoil *airfoil) {
     }
 }
 
-Airfoil *create_airfoil(int num_points, double T, double P, double M) {
+Airfoil *create_airfoil(int num_points, double M, double P, double T) {
     Airfoil *airfoil = (Airfoil *)malloc(sizeof(Airfoil));
     if (!airfoil) return NULL;
 
